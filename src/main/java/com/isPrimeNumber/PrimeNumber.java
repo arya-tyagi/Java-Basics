@@ -36,6 +36,7 @@ public class PrimeNumber {
         for (int i = 2; i * i <= input; i++) {
             if (input % i == 0) {
                 count++;
+                break;
             }
         }
         return count == 0;
